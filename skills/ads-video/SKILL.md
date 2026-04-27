@@ -1,5 +1,5 @@
 ---
-name: Video Ad Script Writer
+name: ads-video
 description: Generates complete video ad scripts for 15s, 30s, and 60s formats with shot-by-shot breakdowns, voiceover scripts, on-screen text, B-roll suggestions, music direction, storyboard outlines, and three proven video frameworks
 ---
 

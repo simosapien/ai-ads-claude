@@ -1,5 +1,5 @@
 ---
-name: Platform-Specific Ad Copy Generator
+name: ads-copy
 description: Generates 10+ ad copy variations for any major ad platform with A/B testing, character-count compliance, and four proven copy frameworks (PAS, AIDA, BAB, 4Ps)
 ---
 

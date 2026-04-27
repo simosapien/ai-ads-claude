@@ -1,5 +1,5 @@
 ---
-name: Google Ads Keyword Strategy
+name: ads-keywords
 description: Builds a complete Google Ads keyword strategy with search intent mapping, ad group structure, match type recommendations, negative keyword lists, estimated CPC ranges, Quality Score optimization, and ready-to-implement campaign architecture
 ---
 
