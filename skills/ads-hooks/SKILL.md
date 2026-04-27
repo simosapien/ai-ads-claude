@@ -1,14 +1,16 @@
 ---
-name: Scroll-Stopping Hook Generator
+name: ads-hooks
 description: Generates 20+ scroll-stopping ad hooks organized by psychological angle (pain, curiosity, social proof, contrarian, urgency) with platform-specific formatting, A/B variations, and psychology breakdowns
 ---
 
 # Scroll-Stopping Hook Generator
 
 ## Skill Purpose
+
 Generate 20+ battle-tested hooks that stop the scroll across every major ad platform. Hooks are the single most important element in any ad — the first 1-3 seconds determine whether your ad gets watched or ignored. This skill produces hooks organized by psychological angle, each with platform-specific formatting, an A/B variation, a psychology breakdown explaining why it works, and guidance on where to use it. Output is ready to plug directly into ad copy, video scripts, or email subject lines.
 
 ## When to Use
+
 - User runs `/ads hooks`
 - User asks for scroll-stopping hooks, opening lines, or attention-grabbers
 - Called as a subagent from `/ads strategy` (the main orchestrator)
@@ -16,6 +18,7 @@ Generate 20+ battle-tested hooks that stop the scroll across every major ad plat
 - User wants to improve CTR on existing ads by testing new hooks
 
 ## Input Requirements
+
 - **Required:** Business context — a URL, product/service description, or prior strategy data
 - **Optional:** Target persona, specific platform focus, industry vertical, offer details
 
@@ -24,6 +27,7 @@ Generate 20+ battle-tested hooks that stop the scroll across every major ad plat
 ### Step 1: Gather Business & Audience Context
 
 If a URL is provided, fetch it using `WebFetch` and extract:
+
 - Business name, industry, and niche
 - Core value proposition and USPs
 - Target audience indicators
@@ -33,6 +37,7 @@ If a URL is provided, fetch it using `WebFetch` and extract:
 - Competitor landscape
 
 Run supplementary research:
+
 ```
 WebSearch: "[Industry]" best performing ad hooks
 WebSearch: "[Industry]" viral ad examples
@@ -67,6 +72,7 @@ These hooks work by calling out a pain the audience already feels. They create i
 **Psychology:** Loss aversion. People are 2x more motivated to avoid pain than to gain pleasure. Pain hooks activate the amygdala's threat detection system.
 
 **Template patterns:**
+
 - "Stop [doing painful thing] and start [doing desired thing]"
 - "If you're still [painful situation], here's why..."
 - "[Number]% of [audience] are making this [topic] mistake"
@@ -85,13 +91,14 @@ For each hook:
 **Funnel stage:** [TOFU / MOFU / BOFU]
 **Why it works:** [2-3 sentences on the psychology — which cognitive bias, emotional trigger, or pattern interrupt is at play]
 **How to use it:**
+
 - **Facebook/Instagram ad:** [how to format — as primary text opening, headline, or text overlay]
 - **TikTok/Reels:** [how to deliver — on-screen text, voiceover opening, or both]
 - **Google ad:** [how to adapt — as headline, description opening]
 - **YouTube pre-roll:** [how to deliver in first 5 seconds]
 - **Email subject line:** [adapted version for email]
-**Emoji treatment:** [which emojis to add and where, or "none — let the words hit"]
-**Hashtag pairing:** [2-3 relevant hashtags if used on social]
+  **Emoji treatment:** [which emojis to add and where, or "none — let the words hit"]
+  **Hashtag pairing:** [2-3 relevant hashtags if used on social]
 ```
 
 ---
@@ -103,6 +110,7 @@ These hooks create an information gap that the viewer must close. The brain cann
 **Psychology:** The Zeigarnik Effect. Unfinished thoughts create cognitive tension. Question hooks exploit the brain's compulsion to find answers.
 
 **Template patterns:**
+
 - "What happens when you [unexpected action] with [topic]?"
 - "I tested [thing] for [time period]. Here's what happened..."
 - "The [topic] secret that [authority] don't want you to know"
@@ -121,6 +129,7 @@ These hooks leverage other people's actions or endorsements to trigger herd beha
 **Psychology:** Social proof (Cialdini). Authority bias. The bandwagon effect. We look to others' behavior to determine the correct course of action, especially under uncertainty.
 
 **Template patterns:**
+
 - "[Number] [audience type] already [action]. Here's why."
 - "[Authority figure/company] uses this [product/strategy]. You should too."
 - "We helped [X] clients [achieve result] in [timeframe]"
@@ -139,6 +148,7 @@ These hooks challenge conventional wisdom or say something the audience doesn't 
 **Psychology:** The Von Restorff effect (isolation effect). Information that stands out from its surroundings is remembered better. Contrarian takes also trigger the brain's prediction error response, releasing dopamine and increasing attention.
 
 **Template patterns:**
+
 - "[Common advice] is actually killing your [metric]. Here's proof."
 - "Unpopular opinion: [contrarian take about industry]"
 - "Everything you've been told about [topic] is wrong."
@@ -158,6 +168,7 @@ These hooks create time pressure or exclusivity. They work best at the bottom of
 **Psychology:** Scarcity principle (Cialdini) and loss aversion (Kahneman). The fear of missing out (FOMO) is a stronger motivator than the joy of gaining. Time-bound offers trigger the brain's urgency response, shortcutting deliberation.
 
 **Template patterns:**
+
 - "Last chance: [offer] ends [specific time]"
 - "Only [number] spots left for [offer/program]"
 - "[Offer] expires in [time]. Don't say I didn't warn you."
@@ -176,6 +187,7 @@ Include a comprehensive formatting reference:
 ## Platform-Specific Hook Formatting
 
 ### Facebook/Instagram Feed Ads
+
 - **Character guidance:** Keep hooks under 125 characters to display above the fold (before "See More")
 - **Emoji usage:** 1-2 emojis max at the start or end — never in the middle of a sentence
 - **Line breaks:** Use a line break after the hook to create visual separation
@@ -183,6 +195,7 @@ Include a comprehensive formatting reference:
 - **Format:** Text-first, then visual reinforcement
 
 ### TikTok / Instagram Reels
+
 - **Delivery:** Hook must be spoken in the first 1.5 seconds AND shown as on-screen text
 - **Text overlay:** Large, bold, centered text — 5-8 words max on screen
 - **Emoji usage:** Sparingly in on-screen text, more in captions
@@ -190,6 +203,7 @@ Include a comprehensive formatting reference:
 - **Format:** Video-first, text supports the visual
 
 ### Google Ads (Search)
+
 - **Headline limit:** 30 characters per headline — hooks must be compressed
 - **No emojis:** Google Ads does not allow emojis in ad copy
 - **Keyword integration:** Include the target keyword naturally in the hook
@@ -197,6 +211,7 @@ Include a comprehensive formatting reference:
 - **Format:** Intent-matching — the hook must answer what they searched for
 
 ### LinkedIn
+
 - **Tone:** Professional but human — avoid jargon, corporate-speak, and buzzwords
 - **Emoji usage:** Minimal (0-1 per post) — overuse damages credibility
 - **Hashtags:** 3-5 in Sponsored Content, placed at the end
@@ -204,6 +219,7 @@ Include a comprehensive formatting reference:
 - **Line breaks:** Use frequently — LinkedIn's feed compresses long paragraphs
 
 ### YouTube Pre-Roll
+
 - **Timing:** Hook must land in the first 5 seconds (before the skip button)
 - **Delivery:** Both spoken (voiceover) and shown (on-screen text)
 - **No emojis:** On-screen text should be clean and bold
@@ -211,12 +227,14 @@ Include a comprehensive formatting reference:
 - **Format:** Open with the hook verbally, reinforce with on-screen text and a relevant visual
 
 ### Pinterest
+
 - **Placement:** Hook goes in the Pin title (100 chars) and the first line of description
 - **Emoji usage:** Moderate — Pinterest is more visual, emojis help text stand out
 - **Hashtags:** 2-5 in description, relevant to search intent
 - **Format:** Keyword-rich — Pinterest is a search engine, hooks should include searchable terms
 
 ### Email Subject Lines
+
 - **Character guidance:** 40-60 characters for desktop, under 35 for mobile preview
 - **Emoji usage:** 1 emoji at the start can increase open rates by 10-15%
 - **Personalization:** Include [First Name] or [Company] where possible
@@ -231,20 +249,22 @@ Rate each hook's expected performance:
 ```markdown
 ## Hook Performance Predictions
 
-| # | Hook (shortened) | Angle | Expected CTR Impact | Confidence | Best Platform |
-|---|---|---|---|---|---|
-| P1 | [first 40 chars...] | Pain | High (+30-50%) | Medium | Meta |
-| P2 | [first 40 chars...] | Pain | Medium (+15-30%) | High | Google |
-| C1 | [first 40 chars...] | Curiosity | Very High (+50%+) | Medium | TikTok |
-| [etc.] | | | | | |
+| #      | Hook (shortened)    | Angle     | Expected CTR Impact | Confidence | Best Platform |
+| ------ | ------------------- | --------- | ------------------- | ---------- | ------------- |
+| P1     | [first 40 chars...] | Pain      | High (+30-50%)      | Medium     | Meta          |
+| P2     | [first 40 chars...] | Pain      | Medium (+15-30%)    | High       | Google        |
+| C1     | [first 40 chars...] | Curiosity | Very High (+50%+)   | Medium     | TikTok        |
+| [etc.] |                     |           |                     |            |               |
 
 **CTR Impact Rating:**
+
 - Very High: Expected to outperform average hooks by 50%+
 - High: Expected to outperform by 30-50%
 - Medium: Expected to outperform by 15-30%
 - Baseline: Expected to perform at industry average
 
 **Confidence Rating:**
+
 - High: Based on proven patterns and strong audience match
 - Medium: Based on solid principles but needs testing
 - Low: Experimental angle, high variance expected
@@ -256,7 +276,9 @@ Rate each hook's expected performance:
 ## A/B Testing Strategy
 
 ### Phase 1: Angle Testing (Week 1-2)
+
 Test one hook from each angle against each other:
+
 - Ad Set A: [Best Pain hook]
 - Ad Set B: [Best Curiosity hook]
 - Ad Set C: [Best Social Proof hook]
@@ -266,7 +288,9 @@ Test one hook from each angle against each other:
 - Winner criteria: Highest CTR after 1,000 impressions per ad set
 
 ### Phase 2: Variation Testing (Week 3-4)
+
 Take the winning angle and test A/B variations:
+
 - Ad A: [Winning hook — Version A]
 - Ad B: [Winning hook — Version B]
 - Budget: 50/50 split
@@ -274,7 +298,9 @@ Take the winning angle and test A/B variations:
 - Winner criteria: Highest conversion rate after 500 clicks per ad
 
 ### Phase 3: Scaling (Week 5+)
+
 Take the overall winner and:
+
 - Scale budget by 20% every 3 days
 - Create 3 new hooks in the winning angle
 - Refresh creative every 2-3 weeks to avoid ad fatigue
@@ -286,6 +312,7 @@ Take the overall winner and:
 Save the complete output to `ADS-HOOKS.md` in the current working directory.
 
 **File structure:**
+
 ```
 # Scroll-Stopping Hooks: [Business Name]
 > Generated [date] | Source: [URL]
@@ -331,7 +358,9 @@ Save the complete output to `ADS-HOOKS.md` in the current working directory.
 ```
 
 ## Quality Checklist
+
 Before delivering the output, verify:
+
 - [ ] At least 20 hooks generated total
 - [ ] Pain/Problem: at least 5 hooks
 - [ ] Curiosity/Question: at least 5 hooks
@@ -354,6 +383,7 @@ Before delivering the output, verify:
 ## Hook Quality Standards
 
 Every hook must pass these tests:
+
 1. **The 3-second test:** Would this make someone stop mid-scroll? If you have to think about it, the hook isn't strong enough.
 2. **The specificity test:** Does it include a specific number, timeframe, or detail? "Save money" fails. "Save $347/month" passes.
 3. **The relevance test:** Does the target audience immediately see themselves in this hook? Generic hooks get generic results.
